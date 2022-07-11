@@ -75,4 +75,5 @@ python3 knockpy.py nextrequest.com
 1. On the new sheet titled *valid_nextrequest*, I created a new column next to *status code*. 
 2. On the new column, I used the formula `=IMPORTXML(C2,"//h1")` — where C2 refers to the cell that contains hyperlink of a website — to fetch all *h1* information of the websites. 
 3. I found only a handful of errors; websites that no longer use the service have the errors. 
-4. After getting rid of the errors, I found 
+4. After getting rid of the errors, I found 42 valid nextrequest subdomains
+5. Since the number of valid subdomains is low, I manually identified URLs of agencies in California.
