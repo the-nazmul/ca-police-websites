@@ -11,7 +11,8 @@ California police and law enforcement agencies that upload SB 1421 data on their
  ```git clone https://github.com/guelfoweb/knock.git
 cd knock
 pip3 install -r requirements.txt
-python3 knockpy.py nextrequest.com```
+python3 knockpy.py nextrequest.com 
+```
   - A JSON file containing all the subdomains of nextrequest.com is created. 
   
 ### Convert JSON to CSV
@@ -50,9 +51,10 @@ python3 knockpy.py nextrequest.com```
   }
 
   return result;
-}```
-5. I created a new column next to the URLs titled *Status Code*. On the first cell, I typed the following function: `=getstauscode(b2)` — where (b2) refers to the cell that contains the URL. 
-6. All the URLs came back as 302. That is because, I realized, all the URLs had *http* protocol, instead of *https*.
+}
+```
+  6. I created a new column next to the URLs titled *Status Code*. On the first cell, I typed the following function: `=getstauscode(b2)` — where (b2) refers to the cell that contains the URL. 
+  7. All the URLs came back as 302. That is because, I realized, all the URLs had *http* protocol, instead of *https*.
 
 ### Converting all *http*s to *https*
 
